@@ -39,10 +39,6 @@ export class AliSlsBin {
     _.forEach(result.headers, (v, k) => {
       if (k.startsWith('x-log-')) info[_.camelCase(k.substr(6))] = v
     })
-    _.forEach(body, (v) => {
-      delete v.__time__
-      delete v.__source__
-    })
     return { body, info }
   }
 
