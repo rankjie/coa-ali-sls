@@ -10,6 +10,7 @@
     "type": "git",
     "url": "https://github.com/coajs/coa-ali-sls.git"
   },
+  "main": "dist/index.js",
   "scripts": {
     "tsc": "tsc -w",
     "build": "rm -rf dist && tsc && cp package.json *.md dist && rm -rf dist/test",
